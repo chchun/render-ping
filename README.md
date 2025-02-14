@@ -68,3 +68,12 @@ jobs:
     steps:
       - name: Send Ping Request
         run: curl -s https://fastapi-render-m0ga.onrender.com/ > /dev/null
+```
+설명:
+- cron: "*/10 * * * *" → 10분마다 실행됨
+- curl -s https://fastapi-render-m0ga.onrender.com/ > /dev/null
+- Render 서버에 HTTP 요청을 보내서 깨움
+- > /dev/null → 불필요한 출력 제거
+
+
+
