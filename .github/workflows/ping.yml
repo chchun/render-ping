@@ -1,4 +1,3 @@
-```yaml
 name: Keep Render Server Awake
 
 on:
