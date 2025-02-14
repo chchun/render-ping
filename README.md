@@ -73,7 +73,28 @@ jobs:
 - cron: "*/10 * * * *" → 10분마다 실행됨
 - curl -s https://fastapi-render-m0ga.onrender.com/ > /dev/null
 - Render 서버에 HTTP 요청을 보내서 깨움
-- > /dev/null → 불필요한 출력 제거
+- /dev/null → 불필요한 출력 제거
+
+## 📌 4단계: GitHub Actions 파일 저장
+1. 파일 하단에서 "Commit new file" 클릭
+- Commit message: "Add GitHub Actions for Render server ping"
+- ✅ Commit directly to the main branch 체크
+2. 저장이 완료되면 자동으로 Actions이 실행됩니다.
+
+## 📌 5단계: GitHub Actions 실행 확인
+1. GitHub 저장소에서 "Actions" 탭 클릭
+2. 새로운 워크플로우 실행 상태 확인
+- "Keep Render Server Awake" 작업이 정상적으로 실행되었는지 확인
+3. 실행 로그에서 "Send Ping Request" 가 실행된 걸 볼 수 있음.
+
+ ## 🚀 최종 결과
+✅ 이제 Render 서버가 절전 모드로 들어가지 않도록 10분마다 자동으로 Ping을 보냄.
+✅ GitHub Actions이 무료로 실행되므로 유지 비용이 없음.
+✅ 이제 별도의 추가 작업 없이 서버가 Cold Start 문제 없이 유지됨.
+
+
+  
+  
 
 
 
