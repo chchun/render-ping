@@ -2,7 +2,7 @@ name: Keep Render Server Awake
 
 on:
   schedule:
-    - cron: "*/10 * * * *"  # 10분마다 실행 (크론 스케줄)
+    - cron: "*/30 * * * *"  # 10분마다 실행 (크론 스케줄)
 
 jobs:
   ping:
